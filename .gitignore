@@ -1,0 +1,20 @@
+# Compiled executable
+ecommerce.exe
+ecommerce
+
+# Object files
+*.o
+*.obj
+
+# VS Code
+.vscode/
+
+# Visual Studio
+.vs/
+
+# Windows
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.log

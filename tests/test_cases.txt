@@ -1,0 +1,193 @@
+============================================================
+E-COMMERCE ORDER & INVENTORY MANAGEMENT SYSTEM
+TEST CASES
+============================================================
+
+TEST CASE 1
+Feature: Admin Login
+Input:
+Email = admin@shop.com
+Password = admin123
+Expected Result:
+Admin login successful.
+Status: PASS
+
+
+TEST CASE 2
+Feature: Invalid Admin Login
+Input:
+Email = admin@shop.com
+Password = wrong123
+Expected Result:
+Invalid admin credentials.
+Status: PASS
+
+
+TEST CASE 3
+Feature: Add Product
+Input:
+Product ID = 101
+Name = Laptop
+Category = Electronics
+Price = 55000
+Stock = 10
+Expected Result:
+Product added successfully.
+Status: PASS
+
+
+TEST CASE 4
+Feature: Duplicate Product
+Input:
+Product ID = 101
+Expected Result:
+Product ID already exists.
+Status: PASS
+
+
+TEST CASE 5
+Feature: Customer Registration
+Input:
+Customer ID = 1001
+Name = Rahul Kumar
+Email = rahul@gmail.com
+Password = 1234
+Address = Mohali
+Expected Result:
+Customer registered successfully.
+Status: PASS
+
+
+TEST CASE 6
+Feature: Duplicate Customer
+Input:
+Customer ID = 1001
+Expected Result:
+Customer ID or email already exists.
+Status: PASS
+
+
+TEST CASE 7
+Feature: Add Product to Cart
+Input:
+Product ID = 101
+Quantity = 2
+Expected Result:
+Product added to cart successfully.
+Status: PASS
+
+
+TEST CASE 8
+Feature: Invalid Quantity
+Input:
+Quantity = 0
+Expected Result:
+Quantity must be greater than 0.
+Status: PASS
+
+
+TEST CASE 9
+Feature: Insufficient Stock
+Input:
+Product ID = 101
+Quantity = 100
+Expected Result:
+Insufficient stock.
+Status: PASS
+
+
+TEST CASE 10
+Feature: Checkout Empty Cart
+Expected Result:
+Cannot checkout. Cart is empty.
+Status: PASS
+
+
+TEST CASE 11
+Feature: UPI Payment
+Input:
+UPI ID = user@upi
+Expected Result:
+UPI payment processed successfully.
+Status: PASS
+
+
+TEST CASE 12
+Feature: Invalid UPI
+Input:
+UPI ID = userupi
+Expected Result:
+Invalid UPI ID.
+Status: PASS
+
+
+TEST CASE 13
+Feature: Card Payment
+Input:
+Card = 1234567812345678
+CVV = 123
+Expected Result:
+Card payment processed successfully.
+Status: PASS
+
+
+TEST CASE 14
+Feature: Invalid Card
+Input:
+Card = 1234
+Expected Result:
+Card number must contain 16 digits.
+Status: PASS
+
+
+TEST CASE 15
+Feature: Cash on Delivery
+Expected Result:
+Cash on Delivery selected.
+Status: PASS
+
+
+TEST CASE 16
+Feature: Inventory Deduction
+Initial Stock = 10
+Purchased = 2
+Expected Stock = 8
+Status: PASS
+
+
+TEST CASE 17
+Feature: View Customer Orders
+Expected Result:
+Customer should see only his/her orders.
+Status: PASS
+
+
+TEST CASE 18
+Feature: Admin View Orders
+Expected Result:
+Admin should see all orders.
+Status: PASS
+
+
+TEST CASE 19
+Feature: Update Order Status
+Input:
+Order ID = 1001
+New Status = Shipped
+Expected Result:
+Order status updated successfully.
+Status: PASS
+
+
+TEST CASE 20
+Feature: File Persistence
+Steps:
+1. Add products.
+2. Register customer.
+3. Place order.
+4. Exit program.
+5. Start program again.
+
+Expected Result:
+Products, customers and orders are restored from files.
+Status: PASS
